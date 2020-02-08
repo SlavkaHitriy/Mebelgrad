@@ -2,6 +2,9 @@ h1, h2, h3, h4, h5, h6, ul {
     margin: 0;
     padding: 0;
 }
+ul{
+    list-style: none;
+}
 a{
     text-decoration: none;
     color: inherit;
@@ -15,7 +18,7 @@ a{
 //     @include xl(max-width, rem(1110));
 // }
 
-.main{
+.wrapper{
     display: flex;
 }
 
@@ -29,6 +32,7 @@ a{
 body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+    color: #212121;
 }
 
 .menu-item{

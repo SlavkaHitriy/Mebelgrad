@@ -29,15 +29,15 @@
     <body>
         @@include("../blocks/modules/header/header.html")
 
-        <main class="main">
+        <div class="wrapper">
             @@include("../blocks/modules/aside/aside.html")
+            <main class="main">
 
-            <div class="content">
+            </main>
+            @@include("../blocks/modules/footer/footer.html")
+        </div>
 
-            </div>
-        </main>
-
-        @@include("../blocks/modules/footer/footer.html")
+        
         <script src="js/main.js"></script>
         <script src="js/vendor.js"></script>
     </body>
