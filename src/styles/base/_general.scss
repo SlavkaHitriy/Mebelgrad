@@ -1,0 +1,41 @@
+h1, h2, h3, h4, h5, h6, ul {
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+// .container {
+//     @include container();
+//     @include sm(max-width, rem(510));
+//     @include md(max-width, rem(690));
+//     @include lg(max-width, rem(930));
+//     @include xl(max-width, rem(1110));
+// }
+
+.main{
+    display: flex;
+}
+
+.container{
+    max-width: 980px;
+    padding: 0 20px;
+    width: 100%;
+    margin: 0 auto;
+ }
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.menu-item{
+    display: inline-block;
+   a{
+      color: #9a9a9a;
+      font-size: 12px;
+      font-weight: 500;
+   }
+}

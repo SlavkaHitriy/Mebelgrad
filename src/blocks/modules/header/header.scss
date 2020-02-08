@@ -1,0 +1,138 @@
+.header{
+   padding-top: 20px;
+   padding-left: 56px;
+   margin-bottom: 25px;
+}
+
+.header__inner{
+   display: flex;
+   align-items: center;
+}
+
+.header__menu-item{
+   padding-bottom: 2px;
+   & + .header__menu-item{
+      margin-left: 30px;
+   }
+}
+
+.header__time{
+   color: #9a9a9a;
+   font-size: 12px;
+   margin-left: 30px;
+}
+
+.header__phone{
+   color: #0d599e;
+   font-size: 18px;
+   margin-left: 90px;
+}
+
+.header__bottom{
+   margin-top: 25px;
+   display: flex;
+   align-items: center;
+}
+
+.header__logo{
+   display: block;
+   background-image: url(../../../img/logo.png);
+   width: 202px;
+   height: 40px;
+   background-size: contain;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.header__catalog-link{
+   padding: 12px 32px;
+   display: block;
+   border-radius: 10px;
+   background-color: #b22825;
+   font-size: 15px;
+   color: #fff;
+   margin-left: 85px;
+}
+
+.header__inp-wrapper{
+   position: relative;
+   &::after{
+      content: '';
+      position: absolute;
+      display: block;
+      width: 21px;
+      cursor: pointer;
+      height: 21px;
+      background-image: url(../../../img/search.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      top: 9px;
+      right: 20px;
+   }
+}
+
+.header__search{
+   border-radius: 20px;
+   background-color: rgba(#e6e6e6, .6);
+   padding: 13px 50px 13px 35px;
+   position: relative;
+   border: none;
+   margin-left: 60px;
+   outline: none;
+   font-size: 14px;
+   &::placeholder{
+      color: #c6c6c6;
+   }
+}
+
+.header__bottom-list,
+.header__bottom-icons{
+   li{
+      display: inline-block;
+   }
+}
+
+.header__bottom-list{
+   margin-left: 40px;
+}
+.header__bottom-icons{
+   margin-left: 55px;
+}
+
+.header__bottom-item{
+   font-size: 15px;
+   color: rgba(#010000, .9);
+   & + .header__bottom-item{
+      margin-left: 40px;
+   }
+}
+
+.header__bottom-icon{
+   a{
+      display: block;
+      width: 20px;
+      height: 20px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+   }
+   & + .header__bottom-icon{
+      margin-left: 25px;
+   }
+   &.icon-heart{
+      a{
+         background-image: url(../../../img/header__icon-1.png);
+      }
+   }
+   &.icon-bag{
+      a{
+         background-image: url(../../../img/header__icon-2.png);
+      }
+   }
+   &.icon-user{
+      a{
+         background-image: url(../../../img/header__icon-3.png);
+      }
+   }
+}
