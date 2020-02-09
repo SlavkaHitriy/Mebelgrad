@@ -20,52 +20,79 @@
    }
 }
 .aside__menu-item{
-   padding: 10px 0 10px 66px;
    font-weight: 400;
    font-size: 15px;
-   background-repeat: no-repeat;
-   background-position: left center;
+   a{
+      padding: 10px 0 10px 66px;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-position: left center;
+   }
    & + .aside__menu-item{
-      margin-top: 15px;
+      margin-top: 30px;
    }
    &.item-1{
-      background-image: url(../../../img/aside_item-1.png);
+      a{
+         background-image: url(../../../img/aside_item-1.png);
+      }
    }
    &.item-2{
-      background-image: url(../../../img/aside_item-2.png);
+      a{
+         background-image: url(../../../img/aside_item-2.png);
+      }
    }
    &.item-3{
-      background-image: url(../../../img/aside_item-3.png);
+      a{
+         background-image: url(../../../img/aside_item-3.png);
+      }
    }
    &.item-4{
-      background-image: url(../../../img/aside_item-4.png);
+      a{
+         background-image: url(../../../img/aside_item-4.png);
+      }
    }
    &.item-5{
-      background-image: url(../../../img/aside_item-5.png);
+      a{
+         background-image: url(../../../img/aside_item-5.png);
+      }
    }
    &.item-6{
-      background-image: url(../../../img/aside_item-6.png);
+      a{
+         background-image: url(../../../img/aside_item-6.png);
+      }
    }
    &.item-7{
-      background-image: url(../../../img/aside_item-7.png);
+      a{
+         background-image: url(../../../img/aside_item-7.png);
+      }
    }
    &.item-8{
-      background-image: url(../../../img/aside_item-8.png);
+      a{
+         background-image: url(../../../img/aside_item-8.png);
+      }
    }
    &.item-9{
-      background-image: url(../../../img/aside_item-9.png);
-      background-position: 7px center;
+      a{
+         background-image: url(../../../img/aside_item-9.png);
+         background-position: 7px center;
+      }
    }
    &.item-10{
-      background-image: url(../../../img/aside_item-10.png);
-      background-position: 5px center;
+      a{
+         background-image: url(../../../img/aside_item-10.png);
+         background-position: 5px center;
+      }
    }
    &.item-11{
-      background-image: url(../../../img/aside_item-11.png);
-      background-position: 7px center;
+      a{
+         background-position: 7px center;
+         background-image: url(../../../img/aside_item-11.png);
+      }
    }
    &.item-12{
-      background-image: url(../../../img/aside_item-12.png);
+      a{
+         background-image: url(../../../img/aside_item-12.png);
+      }
    }
 }
 

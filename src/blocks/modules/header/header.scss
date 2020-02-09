@@ -1,7 +1,21 @@
 .header{
    padding-top: 20px;
-   padding-left: 56px;
+   padding-left: 345px;
    margin-bottom: 25px;
+   position: relative;
+}
+
+.header__logo{
+   display: block;
+   background-image: url(../../../img/logo.png);
+   width: 202px;
+   height: 40px;
+   background-size: contain;
+   background-position: center;
+   background-repeat: no-repeat;
+   position: absolute;
+   bottom: 0;
+   left: 56px;
 }
 
 .header__inner{
@@ -25,7 +39,7 @@
 .header__phone{
    color: #0d599e;
    font-size: 18px;
-   margin-left: 90px;
+   margin-left: 75px;
 }
 
 .header__bottom{
@@ -34,30 +48,21 @@
    align-items: center;
 }
 
-.header__logo{
-   display: block;
-   background-image: url(../../../img/logo.png);
-   width: 202px;
-   height: 40px;
-   background-size: contain;
-   background-position: center;
-   background-repeat: no-repeat;
-}
-
 .header__catalog-link{
-   padding: 12px 32px;
+   padding: 12px 35px;
    display: block;
    border-radius: 10px;
    background-color: #b22825;
    font-size: 15px;
    color: #fff;
-   margin-left: 85px;
 }
 
 .header__inp-wrapper{
    position: relative;
-   &::after{
-      content: '';
+   max-width: 263px;
+   width: 100%;
+   margin-left: 60px;
+   a{
       position: absolute;
       display: block;
       width: 21px;
@@ -76,11 +81,10 @@
    border-radius: 20px;
    background-color: rgba(#e6e6e6, .6);
    padding: 13px 50px 13px 35px;
-   position: relative;
    border: none;
-   margin-left: 60px;
    outline: none;
    font-size: 14px;
+   width: 100%;
    &::placeholder{
       color: #c6c6c6;
    }
