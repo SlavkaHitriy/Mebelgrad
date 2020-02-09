@@ -94,9 +94,29 @@
          background-image: url(../../../img/aside_item-12.png);
       }
    }
+   &.item-13{
+      text-decoration: underline;
+      display: none;
+      a{
+         background-position: 10px center;
+         background-image: url(../../../img/header__icon-3.png);
+      }
+   }
+   &.item-14{
+      text-decoration: underline;
+      display: none;
+      a{
+         background-position: 9.5px center;
+         background-image: url(../../../img/header__icon-1.png);
+      }
+   }
 }
 
 .aside__box{
    padding-top: 20px;
    padding-left: 54px;
 }
+
+
+
+@import "aside-media";

@@ -18,6 +18,50 @@
    left: 56px;
 }
 
+.burger{
+   display: none;
+   position: absolute;
+   top: 85px;
+   left: 55px;
+   width: 30px;
+   height: 25px;
+   z-index: 6;
+   transition: all .3s;
+   span{
+      display: block;
+      width: 25px;
+      height: 4px;
+      background-color: rgba(#212121, .8);
+      border-radius: 2px;
+      transition: all .5s;
+      position: absolute;
+      &:first-child{
+         top: 1px;
+      }
+      &:nth-child(2){
+         top: 10px;
+      }
+      &:last-child{
+         bottom: 1px;
+      }
+   }
+   &.active{
+      span{
+         &:first-child{
+            top: 10.5px;
+            transform: rotate(135deg);
+         }
+         &:nth-child(2){
+            opacity: 0;
+         }
+         &:last-child{
+            bottom: 10.5px;
+            transform: rotate(-135deg);
+         }
+      }
+   }
+}
+
 .header__inner{
    display: flex;
    align-items: center;
@@ -140,3 +184,7 @@
       }
    }
 }
+
+
+
+@import "header-media";

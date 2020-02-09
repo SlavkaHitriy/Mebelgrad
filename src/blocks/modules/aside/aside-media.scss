@@ -1,0 +1,35 @@
+@media (max-width: 1300px){
+   .aside__menu-item{
+      &.item-13,
+      &.item-14{
+         display: block;
+      }
+   }
+}
+
+@media (max-width: 750px){
+   .aside{
+      transform: translateX(-100%);
+      transition: all .5s;
+      opacity: 0;
+      &.show{
+         transform: translateX(0);
+         opacity: 1;
+      }
+      min-width: 282px;
+   }
+}
+
+
+@media (max-width: 400px){
+   .aside__menu{
+      padding-left: 15px;
+      &::after{
+         left: 0;
+         transform: none;
+      }
+   }
+   .aside__box{
+      padding-left: 15px;
+   }
+}
