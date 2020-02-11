@@ -59,5 +59,82 @@
 
 
 @media (max-width: 500px){
-   
+   .footer__details{
+      display: none;
+      &.mobile{
+         display: block;
+      }
+      &.footer__details-1{
+         margin-top: 10px;
+      }
+      &.phone{
+         margin-top: 10px;
+         margin-bottom: 40px;
+      }
+   }
+   .footer{
+      .container{
+         padding: 0;
+      }
+   }
+   .footer__content,
+   .footer__drop-btn,
+      .footer__drop{
+      display: block;
+   }
+   .footer__top,
+   .footer__bottom,
+   .footer__column{
+      padding: 0 15px;
+   }
+   .footer__column.hide{
+      display: none;
+   }
+   .footer__content .footer__column{
+      width: 100%;
+   }
+   .footer__drop-btn{
+      color: #212121;
+      font-weight: 700;
+      font-size: 15px;
+      background-color: #ffffbd;
+      padding: 15px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      position: relative;
+      &::after{
+         content: '';
+         position: absolute;
+         display: block;
+         width: 16px;
+         height: 9px;
+         background-image: url(../../../img/angle-down.png);
+         background-repeat: no-repeat;
+         background-position: center;
+         top: 20px;
+         right: 30px;
+      }
+   }
+   .footer__bottom{
+      margin-top: 20px;
+   }
+   .footer__drop{
+      width: 100%;
+      height: 0;
+      background-color: #ffffbd;
+      overflow: hidden;
+      transition: all 1s;
+      .footer__column{
+         transition: all 1s;
+         padding-top: 10px;
+         transform: translateY(-100%);
+      }
+      &.active{
+         .footer__column.mobile{
+            transform: translateY(0);
+         }
+      }
+   }
 }

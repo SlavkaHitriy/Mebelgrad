@@ -57,6 +57,9 @@
 .footer__details{
    font-size: 12px;
    line-height: 24px;
+   &.mobile{
+      display: none;
+   }
    &-1{
       margin-top: 40px;
       max-width: 225px;
@@ -78,6 +81,11 @@
    justify-content: space-between;
    align-items: center;
    margin-top: 50px;
+}
+
+.footer__drop-btn,
+.footer__drop{
+   display: none;
 }
 
 .footer__socials{
