@@ -5,7 +5,10 @@ html{
  *::before,
  *::after{
     box-sizing: inherit;
- }
+}
+body{
+    overflow-x: hidden;
+}
 
 h1, h2, h3, h4, h5, h6, ul {
     margin: 0;
@@ -61,4 +64,13 @@ body{
 
 .content{
     width: 100%;
+}
+
+.title{
+    color: #212121;
+    font-size: 48px;
+    font-weight: 700;
+    border-bottom: 4px solid #0d599e;
+    display: inline;
+    line-height: 60px;
 }

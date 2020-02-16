@@ -1,0 +1,29 @@
+.advantages{
+   .title-wrapper{
+      max-width: 470px;
+   }
+}
+.advantages__inner{
+   display: flex;
+   flex-wrap: wrap;
+}
+.advantages__item{
+   display: flex;
+   justify-content: space-between;
+   width: 50%;
+   align-items: center;
+   margin-bottom: 90px;
+   &:nth-child(odd){
+      padding-right: 50px;
+   }
+   &:nth-child(even){
+      padding-left: 50px;
+   }
+}
+.advantages__text{
+   max-width: 257px;
+   width: 100%;
+   color: #000;
+   font-weight: 500;
+   font-size: 15px;
+}
