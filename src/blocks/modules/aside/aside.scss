@@ -1,7 +1,13 @@
 .aside{
    height: 100%;
-   min-width: 315px;
+   max-width: 315px;
    padding: 20px 10px 0 0;
+   position: absolute;
+   left: 0;
+   &.fixed{
+      position: fixed;
+      top: 0;
+   }
 }
 .aside__menu{
    padding-bottom: 22px;
@@ -27,71 +33,77 @@
       width: 100%;
       background-repeat: no-repeat;
       background-position: left center;
+      background-size: 45px;
    }
    & + .aside__menu-item{
       margin-top: 30px;
    }
    &.item-1{
       a{
-         background-image: url(../../../img/aside_item-1.png);
+         background-image: url(../../../img/svg/aside__item-1.svg);
       }
    }
    &.item-2{
       a{
-         background-image: url(../../../img/aside_item-2.png);
+         background-image: url(../../../img/svg/aside__item-2.svg);
       }
    }
    &.item-3{
       a{
-         background-image: url(../../../img/aside_item-3.png);
+         background-image: url(../../../img/svg/aside__item-3.svg);
+         background-position: 3px 0;
+         background-size: 40px;
       }
    }
    &.item-4{
       a{
-         background-image: url(../../../img/aside_item-4.png);
+         background-image: url(../../../img/svg/aside__item-4.svg);
       }
    }
    &.item-5{
       a{
-         background-image: url(../../../img/aside_item-5.png);
+         background-image: url(../../../img/svg/aside__item-5.svg);
       }
    }
    &.item-6{
       a{
-         background-image: url(../../../img/aside_item-6.png);
+         background-image: url(../../../img/svg/aside__item-6.svg);
       }
    }
    &.item-7{
       a{
-         background-image: url(../../../img/aside_item-7.png);
+         background-image: url(../../../img/svg/aside__item-7.svg);
       }
    }
    &.item-8{
       a{
-         background-image: url(../../../img/aside_item-8.png);
+         background-image: url(../../../img/svg/aside__item-8.svg);
       }
    }
    &.item-9{
       a{
-         background-image: url(../../../img/aside_item-9.png);
-         background-position: 7px center;
+         background-image: url(../../../img/svg/aside__item-9.svg);
+         background-size: 32px;
+         background-position: 6px 0;
       }
    }
    &.item-10{
       a{
-         background-image: url(../../../img/aside_item-10.png);
-         background-position: 5px center;
+         background-image: url(../../../img/svg/aside__item-10.svg);
+         background-size: 38px;
+         background-position: 2px 0;
       }
    }
    &.item-11{
       a{
-         background-position: 7px center;
+         background-size: 30px;
+         background-position: 10px 7px;
          background-image: url(../../../img/aside_item-11.png);
       }
    }
    &.item-12{
       a{
-         background-image: url(../../../img/aside_item-12.png);
+         background-image: url(../../../img/svg/aside__item-12.svg);
       }
    }
    &.item-13{
@@ -99,7 +111,8 @@
       display: none;
       a{
          background-position: 10px center;
-         background-image: url(../../../img/header__icon-3.png);
+         background-size: 25px;
+         background-image: url(../../../img/svg/aside__item-13.svg);
       }
    }
    &.item-14{
@@ -107,7 +120,8 @@
       display: none;
       a{
          background-position: 9.5px center;
-         background-image: url(../../../img/header__icon-1.png);
+         background-size: 27px;
+         background-image: url(../../../img/svg/aside__item-14.svg);
       }
    }
 }

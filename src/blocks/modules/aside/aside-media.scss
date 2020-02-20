@@ -12,14 +12,22 @@
       transform: translateX(-100%);
       transition: all .5s;
       opacity: 0;
-      position: absolute;
+      position: fixed;
       background-color: #fff;
+      box-shadow: 0 0 9px rgba(#000, .5);
       z-index: 5;
+      top: 132px;
       &.show{
          transform: translateX(0);
          opacity: 1;
       }
       min-width: 282px;
+   }
+}
+
+@media (max-width: 500px){
+   .aside{
+      top: 118px;
    }
 }
 

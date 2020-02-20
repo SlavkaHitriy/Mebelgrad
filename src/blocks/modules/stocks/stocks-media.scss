@@ -1,0 +1,52 @@
+@media (max-width: 1300px){
+   .stocks-news__categories{
+      flex-wrap: wrap;
+      .stocks-news__category{
+         padding-right: 30px;
+         margin-bottom: 18px;
+      }
+      .stocks-news__category + li{
+         margin-left: 0;
+      }
+      padding-right: 20px;
+   }
+   .stocks-news__price{
+      span{
+         font-size: 20px;
+      }
+   }
+   .stocks-news__img{
+      height: 220px;
+   }
+}
+
+@media (max-width: 1200px){
+   .stocks-news__price{
+      span{
+         display: block;
+         margin-left: 0;
+      }
+   }
+   .stocks__glide{
+      margin-top: 20px;
+   }
+}
+
+@media (max-width: 750px){
+   .stocks-news__arrows{
+      left: 175px;
+      top: 8px;
+   }
+   .stocks-news__categories .stocks-news__category{
+      padding-right: 24px;
+   }
+   .stocks-news__categories{
+      padding-right: 0;
+   }
+}
+
+@media (max-width: 600px){
+   .stocks{
+      margin-bottom: 60px;
+   }
+}

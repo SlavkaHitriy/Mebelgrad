@@ -1,5 +1,6 @@
 .main-slider{
    margin-bottom: 60px;
+   // max-width: 1140px;
    .glide__slide{
       min-height: 654px;
       max-width: 975px;
@@ -64,6 +65,9 @@
       left: 60px;
    }
    .glide__arrow--right{
-      right: 410px;
+      left: 880px;
    }
 }
+
+
+@import 'slider-media';

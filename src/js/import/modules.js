@@ -3,3 +3,4 @@ import "%modules%/footer/footer";
 import "%modules%/slider/slider";
 import "%modules%/stocks/stocks";
 import "%modules%/news/news";
+import "%modules%/aside/aside";

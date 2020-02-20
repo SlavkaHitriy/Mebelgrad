@@ -1,0 +1,35 @@
+@media (max-width: 1100px){
+   .advantages__item:nth-child(even){
+      padding-left: 20px;
+   }
+   .advantages__item:nth-child(odd){
+      padding-right: 20px;
+   }
+}
+
+@media (max-width: 1050px){
+   .advantages__item{
+      flex-direction: column-reverse;
+      justify-content: center;
+      margin-bottom: 40px;
+   }
+   .advantages__text{
+      padding-right: 0;
+      text-align: center;
+   }
+}
+
+@media (max-width: 500px){
+   .advantages__item{
+      width: 100%;
+   }
+   .advantages__item:nth-child(even){
+      padding-left: 0;
+   }
+   .advantages__item:nth-child(odd){
+      padding-right: 0;
+   }
+   .advantages__text{
+      font-size: 12px;
+   }
+}
