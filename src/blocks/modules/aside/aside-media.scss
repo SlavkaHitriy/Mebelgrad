@@ -17,6 +17,7 @@
       box-shadow: 0 0 9px rgba(#000, .5);
       z-index: 5;
       top: 132px;
+      overflow-y: scroll;
       &.show{
          transform: translateX(0);
          opacity: 1;

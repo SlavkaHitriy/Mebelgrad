@@ -1,0 +1,138 @@
+.catalog-content{
+   padding-right: 420px;
+}
+.catalog-content__title{
+   color: #212121;
+   font-size: 30px;
+   font-weight: 500;
+   margin-bottom: 10px;
+}
+.catalog-content__filters{
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   .catalog-content__filter{
+      color: #4e4e4e;
+      font-size: 14px;
+      margin-right: 43px;
+      margin-bottom: 20px;
+      &.active{
+         color: #0d599e;
+         text-decoration: underline;
+      }
+      &.sale,
+      &.new,
+      &.hit{
+         a{
+            width: 53px;
+            height: 25px;
+            display: block;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 400;
+         }
+      }
+      &.sale{
+         background-color: #d12e26;
+      }
+      &.new{
+         background-color: #0d599e;
+      }
+      &.hit{
+         background-color: #f0dd20;
+      }
+   }
+}
+
+.catalog-content__inner{
+   display: flex;
+   margin: 0 -15px;
+   flex-wrap: wrap;
+}
+
+.catalog-content__item{
+   max-width: calc(33.333% - 30px);
+   width: 100%;
+   margin: 0 15px;
+   display: block;
+   position: relative;
+   padding-top: 25px;
+   margin-bottom: 100px;
+   .catalog-content__like{
+      position: absolute;
+      top: 17px;
+      right: 8px;
+      background-image: url(../../../img/svg/aside__item-14.svg);
+      width: 27px;
+      height: 25px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      transition: all .5s;
+      opacity: 0;
+   }
+   &:hover{
+      .catalog-content__like,
+      .catalog-content__buy{
+         opacity: 1;
+      }
+      .catalog-content__buy{
+         visibility: visible;
+      }
+   }
+}
+
+.catalog-content__buy{
+   padding-bottom: 35px;
+   background-color: rgba(#fff, .9);
+   padding-top: 20px;
+   width: 100%;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   transform: translateY(100%);
+   transition: all .5s;
+   opacity: 0;
+   visibility: hidden;
+   z-index: 5;
+}
+
+.catalog-content__btn{
+   font-size: 14px;
+   padding-right: 25px;
+   padding-left: 25px;
+   border-radius: 18px;
+   margin-right: auto;
+   display: block;
+}
+
+.catalog-content__box{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 15px;
+}
+
+.catalog-content__by-click,
+.catalog-content__stitching a{
+   color: #0d599e;
+   font-size: 14px;
+   text-decoration: underline;
+}
+
+.catalog-content__stitching{
+   font-size: 12px;
+   color: #262626;
+   a{
+      font-size: 12px;
+   }
+}
+
+.stocks-news__price.dark{
+   color: #212121;
+   font-weight: 500;
+}
+
+
+@import 'catalog-content-media'

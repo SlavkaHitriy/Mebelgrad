@@ -6,9 +6,48 @@
    left: 0;
    &.fixed{
       position: fixed;
-      top: 0;
+      top: 10px;
    }
 }
+
+.wrapper-catalog{
+   .aside{
+      max-width: 155px;
+      width: 100%;
+      padding: 0;
+   }
+   &.fixed{
+      position: fixed;
+      top: 0;
+   }
+   .aside__menu,
+   .aside__box{
+      padding: 0;
+      width: 100%;
+   }
+   .aside__menu-item{
+      font-size: 0;
+      &:last-child{
+         padding-bottom: 20px;
+      }
+      a{
+         padding: 0;
+         width: 45px;
+         height: 45px;
+         margin: 0 auto;
+         background-size: contain;
+         background-position: center;
+         display: block;
+      }
+      & + .aside__menu-item{
+         margin-top: 20px;
+      }
+   }
+   .aside__menu::after{
+      width: 70%;
+   }
+}
+
 .aside__menu{
    padding-bottom: 22px;
    position: relative;
