@@ -2,7 +2,6 @@ var offsetTop = document.querySelector('.aside').getBoundingClientRect().top + p
 
 window.addEventListener('scroll', function() {
    if(window.innerWidth > 750){
-      console.log('tesst')
       if(pageYOffset > offsetTop){
          document.querySelector('.aside').classList.add('fixed');
       } else {

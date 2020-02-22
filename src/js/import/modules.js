@@ -4,3 +4,4 @@ import "%modules%/slider/slider";
 import "%modules%/stocks/stocks";
 import "%modules%/news/news";
 import "%modules%/aside/aside";
+import "%modules%/product/product";
