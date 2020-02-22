@@ -25,10 +25,18 @@
       padding: 0;
       width: 100%;
    }
+   .aside__box{
+      .aside__menu-item:first-child{
+         padding-top: 10px;
+         a{
+            background-position: center;
+         }
+      }
+   }
    .aside__menu-item{
       font-size: 0;
       &:last-child{
-         padding-bottom: 20px;
+         padding-bottom: 10px;
       }
       a{
          padding: 0;
@@ -40,7 +48,7 @@
          display: block;
       }
       & + .aside__menu-item{
-         margin-top: 20px;
+         margin-top: 10px;
       }
    }
    .aside__menu::after{

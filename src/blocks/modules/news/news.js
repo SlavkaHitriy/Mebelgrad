@@ -1,5 +1,7 @@
 import Glide from '@glidejs/glide';
 
+try{
+
 const config = {
    bound: true,
    gap: 20,
@@ -24,3 +26,4 @@ const config = {
 }
 
 new Glide('.news__glide', config).mount();
+} catch{}
