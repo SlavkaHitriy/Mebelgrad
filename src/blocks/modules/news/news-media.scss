@@ -10,3 +10,9 @@
       margin-bottom: 60px;
    }
 }
+
+@media (max-width: 450px){
+   .stocks-news__slide{
+      max-width: 100%;
+   }
+}

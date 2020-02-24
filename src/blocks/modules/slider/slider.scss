@@ -1,9 +1,7 @@
 .main-slider{
    margin-bottom: 60px;
-   // max-width: 1140px;
    .glide__slide{
-      min-height: 654px;
-      max-width: 975px;
+      min-height: 954px;
       background-image: url(../../../img/main-slider_img-1.jpg);
       background-size: cover;
       background-repeat: no-repeat;
@@ -65,7 +63,7 @@
       left: 60px;
    }
    .glide__arrow--right{
-      left: 880px;
+      right: 60px;
    }
 }
 

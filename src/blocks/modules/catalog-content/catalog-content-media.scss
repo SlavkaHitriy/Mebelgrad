@@ -1,13 +1,15 @@
 @media (max-width: 1370px){
-   .catalog-content__box{
-      flex-direction: column;
-   }
-   .catalog-content__btn{
-      margin-right: 0;
-      margin-bottom: 10px;
-   }
-   .catalog-content__stitching{
-      text-align: center;
+   .catalog-content{
+      .catalog-content__box{
+         flex-direction: column;
+      }
+      .catalog-content__btn{
+         margin-right: 0;
+         margin-bottom: 10px;
+      }
+      .catalog-content__stitching{
+         text-align: center;
+      }
    }
 }
 
@@ -23,6 +25,29 @@
    }
 }
 
+@media (max-width: 900px){
+   .catalog-filters{
+      position: static;
+   }
+   .catalog-content{
+      padding-right: 0;
+   }
+   .catalog-filters__title{
+      display: block;
+      margin-bottom: 20px;
+   }
+   .catalog-filters{
+      padding: 17px 23px;
+      height: 47px;
+      overflow: hidden;
+      transition: all .5s;
+      &.active{
+         // height: 100%;
+         // overflow: visible;
+      }
+   }
+}
+
 @media (max-width: 870px){
    .catalog-content__item{
       max-width: calc(50% - 30px);
@@ -31,12 +56,6 @@
       padding-right: 0;
    }
 }
-
-// @media (max-width: 750px){
-//    .catalog-content{
-//       padding-top: 170px;
-//    }
-// }
 
 @media (max-width: 500px){
    .catalog-content__item{
@@ -61,25 +80,28 @@
       padding-top: 10px;
       position: relative;
    }
-   .catalog-content__box{
-      align-items: flex-start;
-   }
+   
    .catalog-content__stitching{
       display: none;
    }
-   .catalog-content__btn{
-      position: absolute;
-      right: 20px;
-      font-size: 0;
-      width: 56px;
-      height: 56px;
-      padding: 0;
-      border-radius: 50%;
-      background-image: url(../../../img/bag-white.png);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-color: #da0114;
-      top: -6px;
+   .catalog-content{
+      .catalog-content__btn{
+         position: absolute;
+         right: 20px;
+         font-size: 0;
+         width: 56px;
+         height: 56px;
+         padding: 0;
+         border-radius: 50%;
+         background-image: url(../../../img/bag-white.png);
+         background-repeat: no-repeat;
+         background-position: center;
+         background-color: #da0114;
+         top: -6px;
+      }
+      .catalog-content__box{
+         align-items: flex-start;
+      }
    }
 }
 

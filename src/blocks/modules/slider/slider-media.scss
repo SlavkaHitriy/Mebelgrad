@@ -1,3 +1,11 @@
+@media (max-width: 1500px){
+   .main-slider{
+      .glide__slide{
+         min-height: 654px;
+      }
+   }
+}
+
 @media (max-width: 1300px){
    .main-slider .glide__arrow--right{
       left: auto;

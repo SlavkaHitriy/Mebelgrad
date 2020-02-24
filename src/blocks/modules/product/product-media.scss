@@ -1,0 +1,182 @@
+@media (max-width: 1220px){
+   .product__inner{
+      flex-direction: column;
+      padding-right: 20px;
+   }
+   .product__info{
+      margin-left: 0;
+   }
+   .product__info .catalog-content__like{
+      display: none;
+   }
+   .product{
+      .glide{
+         max-width: 700px;
+         .glide__slide{
+            width: 700px;
+         }
+         img{
+            width: 100%;
+         }
+      }
+   }
+}
+@media (max-width: 850px){
+   .product .stocks-news__arrows{
+      left: 250px;
+   }
+   .product__title-wrapper{
+      max-width: 350px;
+      margin-bottom: 20px;
+      .title{
+         line-height: 40px;
+      }
+   }
+   .product .news__glide .stocks-news__arrows{
+      top: 4px;
+      left: 350px;
+   }
+}
+@media (max-width: 800px){
+   .product{
+      .glide__bullets{
+         display: flex;
+      }
+      .glide__bullet{
+         & + .glide__bullet{
+            margin-left: 5px;
+         }
+         img{
+            display: none;
+         }
+         &.glide__bullet--active{
+            background-color: #e6e6e6;
+         }
+         &.glide__bullet--active::after{
+            display: none;
+         }
+         height: 7px;
+         flex-grow: 1;
+         background-color: rgba(#e6e6e6, .4);
+      }
+   }
+}
+
+@media (max-width: 750px){
+   .product .stocks-news__arrows{
+      left: 270px;
+      top: 22px;
+   }
+   .product .product__slider-wrapper{
+      margin-bottom: 50px;
+      &:last-child{
+         margin-bottom: 50px;
+      }
+   }
+   .product{
+      .news__glide,
+      .stocks__glide{
+         max-width: 100%;
+      }
+   }
+   .product .news__glide .stocks-news__arrows {
+      top: 22px;
+      left: 250px;
+   }
+   .product{
+      padding-left: 0;
+      padding-top: 150px;
+      .glide{
+         max-width: 100%;
+      }
+      &__inner{
+         padding-right: 0;
+      }
+   }
+   .product__title{
+      font-size: 18px;
+      margin-bottom: 16px;
+   }
+   .product__price{
+      font-size: 25px;
+   }
+   .product .catalog-content__btn{
+      font-size: 15px;
+   }
+   .product .catalog-content__stitching, .product .catalog-content__by-click, .product .catalog-content__stitching a{
+      font-size: 14px;
+   }
+}
+
+@media (max-width: 500px){
+   .product__characteristic-title{
+      display: none;
+   }
+   .product__btn{
+      display: flex;
+      align-items: center;
+      padding-left: 15px;
+      font-size: 16px;
+      font-weight: 700;
+      width: 100%;
+      text-transform: uppercase;
+      height: 50px;
+      background-color: rgba(#da0114,.1);
+      position: relative;
+      margin-left: -30px;
+      right: -15px;
+      width: calc(100% + 30px);
+   }
+   .product__characteristic-list{
+      background-color: rgba(#da0114,.1);
+      transition: all .5s;
+      height: 0;
+      padding: 0;
+      margin-left: -15px;
+      right: -15px;
+      width: calc(100% + 30px);
+      overflow: hidden;
+      &.active{
+         padding: 0 15px 20px;
+      }
+      .product__characteristic-item span{
+         display: none;
+      }
+      .product__characteristic-name{
+         &::after{
+            content: ':'
+         }
+         margin-right: 10px;
+      }
+   }
+   .product__title-wrapper .title{
+      font-size: 30px;
+   }
+   .product__title-wrapper{
+      max-width: 300px;
+   }
+   .product .catalog-content__btn{
+      margin-right: 20px;
+   }
+   .product{
+      .catalog-content__box{
+         justify-content: flex-start;
+      }
+   }
+   .product .stocks-news__arrows{
+      left: 220px;
+   }
+   .product .news__glide .stocks-news__arrows{
+      left: 220px;
+   }
+   .product__characteristic-list .product__characteristic-name,
+   .product__characteristic-list .product__characteristic-descr{
+      font-size: 14px;
+   }
+   .product__inner{
+      margin-bottom: 30px;
+   }
+   .product__characteristic{
+      margin-bottom: 50px;
+   }
+}

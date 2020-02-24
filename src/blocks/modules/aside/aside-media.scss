@@ -16,9 +16,10 @@
       background-color: #fff;
       box-shadow: 0 0 9px rgba(#000, .5);
       z-index: 9;
-      top: 132px;
+      top: 133px;
       overflow-y: scroll;
-      height: auto;
+      height: calc(100vh - 132px);
+      padding-bottom: 20px;
       &.show{
          transform: translateX(0);
          opacity: 1;
@@ -30,7 +31,9 @@
 @media (max-width: 500px){
    .aside{
       top: 118px;
+      height: calc(100vh - 120px);
    }
+
 }
 
 

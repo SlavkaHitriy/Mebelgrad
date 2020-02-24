@@ -1,5 +1,9 @@
 .catalog-content{
-   padding-right: 420px;
+   padding-right: 450px;
+   position: relative;
+   .breadcrumbs{
+      margin-top: 30px;
+   }
 }
 .catalog-content__title{
    color: #212121;
@@ -140,5 +144,104 @@
    font-weight: 500;
 }
 
+
+ .catalog-filters{
+    position: absolute;
+    right: 40px;
+    top: 0;
+    max-width: 373px;
+    width: 100%;
+    background-color: rgba(#e6e6e6, .3);
+    height: 100%;
+    padding: 48px 50px 48px 50px;
+    input[type=text]{
+       display: inline-block;
+       width: 67px;
+       height: 26px;
+       background-color: #ffffff;
+       border: none;
+       & + input[type=text]{
+          margin-left: 15px;
+       }
+    }
+    .catalog-filters__box{
+       border: none;
+       & + .catalog-filters__box{
+          margin-top: 35px;
+       }
+    }
+    .catalog-filters__box-2{
+       display: flex;
+       align-items: center;
+    }
+    .catalog-filters__to{
+       display: inline-block;
+       margin: 0 5px;
+    }
+    .catalog-filters__type{
+      font-size: 16px;
+      display: inline-block;
+      margin-right: auto;
+    }
+    .catalog-filters-range{
+       margin-top: 26px;
+       max-width: 178px;
+       margin-left: auto;
+    }
+    .noUi-target,
+    .noUi-connect{
+      background-color: #a7a7a7;
+      height: 1px;
+    }
+    .noUi-base{
+       max-width: 178px;
+       margin-left: auto;
+    }
+    .noUi-target {
+       background: #a7a7a7; 
+       border-radius: 0; 
+       border: none; 
+       box-shadow: none; 
+   }
+   .noUi-connect{
+      background: #a7a7a7;
+   }
+   .noUi-connect, .noUi-origin{
+      right: 13px;
+   }
+    .noUi-handle{
+      width: 15px;
+      height: 15px;
+      background-color: #0d599e;
+      border-radius: 50%;
+      box-shadow: none;
+      border: none;
+      outline: none;
+      &::before,
+      &::after{
+         display: none;
+      }
+    }
+    .catalog-filters__wrap{
+       & + .catalog-filters__wrap{
+          margin-top: 90px;
+       }
+    }
+ }
+ .catalog-filters__btn{
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 10px;
+    background-color: #0d599e;
+    padding: 10px 18px;
+    border: none;
+    display: block;
+    cursor: pointer;
+    margin: 35px auto 0;
+ }
+ .catalog-filters__title{
+    display: none;
+ }
 
 @import 'catalog-content-media'

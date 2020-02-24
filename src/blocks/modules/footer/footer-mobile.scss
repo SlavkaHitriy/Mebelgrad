@@ -101,6 +101,9 @@
       text-align: left;
       outline: none;
       position: relative;
+   }
+   .product__btn,
+   .footer__drop-btn{
       &::after{
          content: '';
          position: absolute;

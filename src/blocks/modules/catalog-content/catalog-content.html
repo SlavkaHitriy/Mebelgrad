@@ -1,12 +1,63 @@
-<ul class="breadcrumbs">
-   <li class="breadcrumbs__item"><a href="#">Главная</a></li>
-   <li class="breadcrumbs__item"><a href="#">Каталог</a></li>
-   <li class="breadcrumbs__item"><a href="#">Кровати и спальни</a></li>
-</ul>
+
 <section class="catalog-content">
+   <ul class="breadcrumbs">
+      <li class="breadcrumbs__item"><a href="#">Главная</a></li>
+      <li class="breadcrumbs__item"><a href="#">Каталог</a></li>
+      <li class="breadcrumbs__item"><a href="#">Кровати и спальни</a></li>
+   </ul>
    <h2 class="catalog-content__title">
       Кровати и спальни
    </h2>
+   <div class="catalog-filters">
+
+      <h4 class="catalog-filters__title">
+         Фильтры
+      </h4>      
+      <div class="catalog-filters__wrapper">
+         <div class="catalog-filters__box price">
+            <div class="catalog-filters__box-2">
+               <span class="catalog-filters__type">Цена</span>
+               <input type="text" class="catalog-filters__min">
+               <span class="catalog-filters__to">-</span>
+               <input type="text" class="catalog-filters__max">
+            </div>
+            <div class="catalog-filters-range"></div>
+         </div>
+   
+         <div class="catalog-filters__box length">
+            <div class="catalog-filters__box-2">
+               <span class="catalog-filters__type">Длина, см</span>
+               <input type="text" class="catalog-filters__min">
+               <span class="catalog-filters__to">-</span>
+               <input type="text" class="catalog-filters__max">
+            </div>
+            <div class="catalog-filters-range"></div>
+         </div>
+   
+         <div class="catalog-filters__box width">
+            <div class="catalog-filters__box-2">
+               <span class="catalog-filters__type">Ширина, см</span>
+               <input type="text" class="catalog-filters__min">
+               <span class="catalog-filters__to">-</span>
+               <input type="text" class="catalog-filters__max">
+            </div>
+            <div class="catalog-filters-range"></div>
+         </div>
+   
+         <div class="catalog-filters__box height">
+            <div class="catalog-filters__box-2">
+               <span class="catalog-filters__type">Высота, см</span>
+               <input type="text" class="catalog-filters__min">
+               <span class="catalog-filters__to">-</span>
+               <input type="text" class="catalog-filters__max">
+            </div>
+            <div class="catalog-filters-range"></div>
+         </div>
+   
+         <button type="submit" class="catalog-filters__btn">Применить</button>
+      </div>
+
+   </div>
    <ul class="catalog-content__filters">
       <li class="catalog-content__filter active"><a href="#">По популярности</a></li>
       <li class="catalog-content__filter"><a href="#">дешевле</a></li>
@@ -208,4 +259,7 @@
       </div>
 
    </div>
+
+
+  
 </section>
