@@ -112,7 +112,7 @@ try{
       filters.addEventListener('click', function(){
          filters.classList.toggle('active');
          if(filters.classList.contains('active')){
-            filters.style.height = document.querySelector('.catalog-filters__wrapper').clientHeight + 80 + 'px';
+            filters.style.height = document.querySelector('.catalog-filters__wrapper').clientHeight + 100 + 'px';
          } else {
             filters.style.height = 47 + 'px';
          }
