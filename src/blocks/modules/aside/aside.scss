@@ -6,7 +6,16 @@
    left: 0;
    &.fixed{
       position: fixed;
-      top: 10px;
+      animation: fixedAside .5s forwards;
+   }
+}
+
+@keyframes fixedAside{
+   0%{
+      top: 43px;
+   }
+   100%{
+      top: 60px;
    }
 }
 

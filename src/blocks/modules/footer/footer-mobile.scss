@@ -1,4 +1,12 @@
 @media (max-width: 1150px){
+   .footer__socials{
+      padding-left: 20px;
+      width: 50%;
+      padding-right: 0;
+      &::before{
+         left: 20px;
+      }
+   }
    .footer__content{
       flex-wrap: wrap;
       .footer__column{
@@ -17,6 +25,13 @@
 
 
 @media (max-width: 900px){
+   .footer__socials{
+      padding-left: 0;
+      width: auto;
+      &::before{
+         left: 0;
+      }
+   }
    .footer__bottom{
       flex-direction: column-reverse;
       align-items: flex-start;

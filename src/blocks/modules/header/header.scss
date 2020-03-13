@@ -1,7 +1,7 @@
 .header{
    padding-top: 20px;
-   padding-left: 345px;
-   margin-bottom: 25px;
+   padding-left: 315px;
+   margin-bottom: 15px;
    position: relative;
 }
 
@@ -9,13 +9,27 @@
    display: block;
    background-image: url(../../../img/logo.png);
    width: 202px;
-   height: 40px;
+   height: 38px;
    background-size: contain;
    background-position: center;
    background-repeat: no-repeat;
    position: absolute;
    bottom: 0;
    left: 56px;
+   &.fixed{
+      position: fixed;
+      bottom: auto;
+      animation: fixedLogo .5s forwards;
+   }
+}
+
+@keyframes fixedLogo{
+   0%{
+      top: 0;
+   }
+   100%{
+      top: 13px;
+   }
 }
 
 .burger{
@@ -91,6 +105,25 @@
    margin-top: 25px;
    display: flex;
    align-items: center;
+   &.fixed{
+      position: fixed;
+      top: 0;
+      z-index: 10;
+      left: 314px;
+      background-color: #fff;
+      width: 100%;
+      margin-top: 0;
+      animation: fixedAnim .5s forwards;
+   }
+}
+
+@keyframes fixedAnim{
+   0%{
+      padding: 0;
+   }
+   100%{
+      padding: 10px 0;
+   }
 }
 
 .header__catalog-link{
@@ -105,14 +138,14 @@
    a{
       position: absolute;
       display: block;
-      width: 21px;
+      width: 17px;
       cursor: pointer;
-      height: 21px;
+      height: 17px;
       background-image: url(../../../img/search.png);
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
-      top: 9px;
+      top: 13px;
       right: 20px;
    }
 }
