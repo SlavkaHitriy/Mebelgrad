@@ -120,62 +120,62 @@ try {
    }
 
    let materialFilters = document.querySelector('.catalog-filters__material');
-filterCheckboxes(materialFilters, 'materials');
-let mechanismFilters = document.querySelector('.catalog-filters__mechanism');
-filterCheckboxes(mechanismFilters, 'mechanisms');
-let typeFilters = document.querySelector('.catalog-filters__type-checkbox');
-filterCheckboxes(typeFilters, 'types');
-let amountFilters = document.querySelector('.catalog-filters__amount');
-filterCheckboxes(amountFilters, 'amount');
+   filterCheckboxes(materialFilters, 'materials');
+   let mechanismFilters = document.querySelector('.catalog-filters__mechanism');
+   filterCheckboxes(mechanismFilters, 'mechanisms');
+   let typeFilters = document.querySelector('.catalog-filters__type-checkbox');
+   filterCheckboxes(typeFilters, 'types');
+   let amountFilters = document.querySelector('.catalog-filters__amount');
+   filterCheckboxes(amountFilters, 'amount');
 
-function filterCheckboxes(filters, str) {
-   let filtersChild = filters.querySelectorAll('li');
-   for (let i = 0; i < filtersChild.length; i++) {
-      let input = document.createElement("INPUT")
-      input.setAttribute('type', 'checkbox');
-      input.setAttribute('value', 1);
-      input.setAttribute('name', `${str}[${i}]`);
-      filters.appendChild(input);
-      input.classList.add('filters-input');
-      filtersChild[i].addEventListener('click', function (e) {
-         if (e.target.classList.contains('active')) {
-            e.target.classList.remove('active');
-            document.querySelectorAll('.filters-input')[i].checked = false;
-         } else {
-            e.target.classList.add('active');
-            document.querySelectorAll('.filters-input')[i].checked = true;
+   function filterCheckboxes(filters, str) {
+      let filtersChild = filters.querySelectorAll('li');
+      for (let i = 0; i < filtersChild.length; i++) {
+         let input = document.createElement("INPUT")
+         input.setAttribute('type', 'checkbox');
+         input.setAttribute('value', 1);
+         input.setAttribute('name', `${str}[${i}]`);
+         filters.appendChild(input);
+         input.classList.add('filters-input');
+         filtersChild[i].addEventListener('click', function (e) {
+            if (e.target.classList.contains('active')) {
+               e.target.classList.remove('active');
+               document.querySelectorAll('.filters-input')[i].checked = false;
+            } else {
+               e.target.classList.add('active');
+               document.querySelectorAll('.filters-input')[i].checked = true;
+            }
+            countActiveItems(filtersChild, filters);
+         })
+      }
+   }
+
+   function countActiveItems(filtersChild, event) {
+      let counter = 0;
+      for (let i = 0; i < filtersChild.length; i++) {
+         if (filtersChild[i].classList.contains('active')) {
+            ++counter;
          }
-         countActiveItems(filtersChild, filters);
+      }
+      if (counter == 0) {
+         event.querySelector('.catalog-filters__filter-title span').textContent = '';
+      } else {
+         event.querySelector('.catalog-filters__filter-title span').textContent = `( ${counter} )`;
+      }
+   }
+
+   let filtersTitle = document.querySelectorAll('.catalog-filters__filter-title');
+
+   for (let i = 0; i < filtersTitle.length; i++) {
+      filtersTitle[i].addEventListener('click', function (e) {
+         if (e.target.parentNode.classList.contains('active')) {
+            e.target.parentNode.style.height = 20 + 'px';
+         } else {
+            e.target.parentNode.style.height = e.target.parentNode.querySelector('ul').clientHeight + 28 + 'px';
+         }
+         e.target.parentNode.classList.toggle('active');
       })
    }
-}
-
-function countActiveItems(filtersChild, event) {
-   let counter = 0;
-   for (let i = 0; i < filtersChild.length; i++) {
-      if (filtersChild[i].classList.contains('active')) {
-         ++counter;
-      }
-   }
-   if (counter == 0) {
-      event.querySelector('.catalog-filters__filter-title span').textContent = '';
-   } else {
-      event.querySelector('.catalog-filters__filter-title span').textContent = `( ${counter} )`;
-   }
-}
-
-let filtersTitle = document.querySelectorAll('.catalog-filters__filter-title');
-
-for (let i = 0; i < filtersTitle.length; i++) {
-   filtersTitle[i].addEventListener('click', function (e) {
-      if (e.target.parentNode.classList.contains('active')) {
-         e.target.parentNode.style.height = 20 + 'px';
-      } else {
-         e.target.parentNode.style.height = e.target.parentNode.querySelector('ul').clientHeight + 28 + 'px';
-      }
-      e.target.parentNode.classList.toggle('active');
-   })
-}
 
 } catch { }
 
