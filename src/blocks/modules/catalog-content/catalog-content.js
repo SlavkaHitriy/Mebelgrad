@@ -119,11 +119,7 @@ try {
       })
    }
 
-} catch { }
-
-
-// let materialFilters = document.querySelectorAll('.catalog-filters__material .catalog-filters__material-list li');
-let materialFilters = document.querySelector('.catalog-filters__material');
+   let materialFilters = document.querySelector('.catalog-filters__material');
 filterCheckboxes(materialFilters, 'materials');
 let mechanismFilters = document.querySelector('.catalog-filters__mechanism');
 filterCheckboxes(mechanismFilters, 'mechanisms');
@@ -181,4 +177,10 @@ for (let i = 0; i < filtersTitle.length; i++) {
       e.target.parentNode.classList.toggle('active');
    })
 }
+
+} catch { }
+
+
+// let materialFilters = document.querySelectorAll('.catalog-filters__material .catalog-filters__material-list li');
+
 
