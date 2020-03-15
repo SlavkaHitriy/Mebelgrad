@@ -244,4 +244,83 @@
     display: none;
  }
 
+ .catalog-filters__checkboxes{
+    margin: 40px 0;
+    height: 20px;
+    overflow: hidden;
+    transition: all .5s;
+    .catalog-filters__filter-title{
+      cursor: pointer;
+      position: relative;
+      span{
+        color: #0d599e;
+        pointer-events: none;
+      }
+      &::after{
+         content: '';
+         background-image: url(../img/angle-down.png);
+         width: 16px;
+         height: 9px;
+         background-repeat: no-repeat;
+         background-position: center;
+         background-size: contain;
+         position: absolute;
+         right: 0;
+         top: 3px;
+         transition: all .3s;
+      }
+    }
+    &.active{
+      .catalog-filters__filter-title{
+         &::after{
+            transform: rotate(180deg);
+         }
+      }
+    }
+    ul{
+       padding-top: 25px;
+       li{
+          cursor: pointer;
+          padding-left: 28px;
+          position: relative;
+          & + li{
+             margin-top: 8px;
+          }
+          span{
+             display: block;
+             width: 14px;
+             height: 14px;
+             position: absolute;
+             left: 0;
+             top: 2px;
+             border-radius: 2px;
+             pointer-events: none;
+             border: 1px solid #212121;
+             &::before{
+                content: '';
+                top: 1px;
+                left: 0.5px;
+                border-radius: 2px;
+                position: absolute;
+                width: 0;
+                height: 0;
+                background-color: #0d599e;
+                transition: all .3s;
+             }
+          }
+          &.active{
+             span{
+                &::before{
+                  width: 11px;
+                  height: 10.5px;
+                }
+             }
+          }
+       }
+    }
+ }
+ .filters-input{
+    display: none;
+ }
+
 @import 'catalog-content-media'

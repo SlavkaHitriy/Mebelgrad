@@ -32,12 +32,14 @@
    .catalog-filters__title{
       display: block;
       margin-bottom: 40px;
+      cursor: pointer;
+      padding-top: 15px;
    }
    .catalog-filters{
       margin-top: 22px;
       margin-bottom: 20px;
-      padding: 17px 23px;
-      padding-top: 15px;
+      padding: 0 23px 17px;
+      padding-top: 0;
       height: 47px;
       overflow: hidden;
       transition: all .5s;
@@ -47,6 +49,7 @@
       right: 0;
       &::after{
          content: '';
+         pointer-events: none;
          position: absolute;
          background-image: url(../../../img/filters-icon.png);
          width: 21px;

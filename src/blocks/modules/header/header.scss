@@ -20,6 +20,7 @@
       position: fixed;
       bottom: auto;
       animation: fixedLogo .5s forwards;
+      z-index: 20;
    }
 }
 
@@ -114,6 +115,19 @@
       width: 100%;
       margin-top: 0;
       animation: fixedAnim .5s forwards;
+   }
+   &.fixed-other{
+      position: fixed;
+      top: 0;
+      z-index: 10;
+      left: 155px;
+      background-color: #fff;
+      width: 100%;
+      margin-top: 0;
+      animation: fixedAnim .5s forwards;
+      .header__catalog-link{
+         margin-left: 160px;
+      }
    }
 }
 
