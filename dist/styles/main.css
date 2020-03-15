@@ -2012,10 +2012,16 @@ body {
 
 .stocks-news__img {
   height: 263px;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
   position: relative;
+}
+
+.stocks-news__img img {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  object-fit: contain;
 }
 
 .stocks-news__img-discount {
@@ -3046,6 +3052,10 @@ body {
   }
 
   .stocks-news__img {
+    height: 220px;
+  }
+
+  .stocks-news__img img {
     height: 220px;
   }
 

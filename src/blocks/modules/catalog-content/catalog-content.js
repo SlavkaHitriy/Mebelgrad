@@ -135,15 +135,15 @@ try {
          input.setAttribute('type', 'checkbox');
          input.setAttribute('value', 1);
          input.setAttribute('name', `${str}[${i}]`);
-         filters.appendChild(input);
+         filtersChild[i].appendChild(input);
          input.classList.add('filters-input');
          filtersChild[i].addEventListener('click', function (e) {
             if (e.target.classList.contains('active')) {
                e.target.classList.remove('active');
-               document.querySelectorAll('.filters-input')[i].checked = false;
+               e.target.querySelector('.filters-input').checked = false;
             } else {
                e.target.classList.add('active');
-               document.querySelectorAll('.filters-input')[i].checked = true;
+               e.target.querySelector('.filters-input').checked = true;
             }
             countActiveItems(filtersChild, filters);
          })
@@ -178,8 +178,5 @@ try {
    }
 
 } catch { }
-
-
-// let materialFilters = document.querySelectorAll('.catalog-filters__material .catalog-filters__material-list li');
 
 

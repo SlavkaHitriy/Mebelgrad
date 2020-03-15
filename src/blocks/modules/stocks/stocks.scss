@@ -8,10 +8,15 @@
 // }
 .stocks-news__img{
    height: 263px;
-   background-size: contain;
-   background-position: center;
-   background-repeat: no-repeat;
    position: relative;
+   img{
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      object-fit: contain;
+   }
    &-discount{
       position: absolute;
       left: 0;
