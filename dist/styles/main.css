@@ -1329,7 +1329,7 @@ body {
   position: fixed;
   right: 15px;
   bottom: 20px;
-  background-image: url(../../img/header__icon-2.png);
+  background-image: url(../img/header__icon-2.png);
   background-repeat: no-repeat;
   background-position: 16px 28px;
   z-index: 10;
@@ -1362,7 +1362,7 @@ body {
 
 .header__logo {
   display: block;
-  background-image: url(../../../img/logo.png);
+  background-image: url(../img/logo.png);
   width: 202px;
   height: 38px;
   background-size: contain;
@@ -1522,7 +1522,7 @@ body {
   width: 17px;
   cursor: pointer;
   height: 17px;
-  background-image: url(../../../img/search.png);
+  background-image: url(../img/search.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -1580,15 +1580,15 @@ body {
 }
 
 .header__bottom-icon.icon-heart a {
-  background-image: url(../../../img/header__icon-1.png);
+  background-image: url(../img/header__icon-1.png);
 }
 
 .header__bottom-icon.icon-bag a {
-  background-image: url(../../../img/header__icon-2.png);
+  background-image: url(../img/header__icon-2.png);
 }
 
 .header__bottom-icon.icon-user a {
-  background-image: url(../../../img/header__icon-3.png);
+  background-image: url(../img/header__icon-3.png);
 }
 
 .aside {
@@ -1917,15 +1917,15 @@ body {
 }
 
 .footer__socials-item.fb a {
-  background-image: url(../../../img/svg/footer_social-1.svg);
+  background-image: url(../img/svg/footer_social-1.svg);
 }
 
 .footer__socials-item.vk a {
-  background-image: url(../../../img/svg/footer_social-2.svg);
+  background-image: url(../img/svg/footer_social-2.svg);
 }
 
 .footer__socials-item.inst a {
-  background-image: url(../../../img/svg/footer_social-3.svg);
+  background-image: url(../img/svg/footer_social-3.svg);
 }
 
 .main-slider {
@@ -2095,11 +2095,11 @@ body {
 }
 
 .stocks-news__arrows .glide__arrow--left {
-  background-image: url(../../../img/svg/arrow_left-small.svg);
+  background-image: url(../img/svg/arrow_left-small.svg);
 }
 
 .stocks-news__arrows .glide__arrow--right {
-  background-image: url(../../../img/svg/arrow_right-small.svg);
+  background-image: url(../img/svg/arrow_right-small.svg);
   margin-left: 15px;
 }
 
@@ -2327,7 +2327,7 @@ body {
   position: absolute;
   top: 17px;
   right: 8px;
-  background-image: url(../../../img/svg/aside__item-14.svg);
+  background-image: url(../img/svg/aside__item-14.svg);
   width: 27px;
   height: 25px;
   background-size: contain;
@@ -3278,7 +3278,7 @@ body {
     content: '';
     pointer-events: none;
     position: absolute;
-    background-image: url(../../../img/filters-icon.png);
+    background-image: url(../img/filters-icon.png);
     width: 21px;
     height: 24px;
     background-repeat: no-repeat;
@@ -3293,7 +3293,7 @@ body {
     font-size: 0;
     width: 28px;
     height: 28px;
-    background-image: url(../../../img/phone.png);
+    background-image: url(../img/phone.png);
     position: absolute;
     top: 20px;
     left: 60px;
@@ -3430,7 +3430,7 @@ body {
   }
 
   .header__logo {
-    background-image: url(../../../img/logo-mobile.png);
+    background-image: url(../img/logo-mobile.png);
     width: 160px;
     height: 31px;
     left: 50%;
@@ -3895,7 +3895,7 @@ body {
     height: 56px;
     padding: 0;
     border-radius: 50%;
-    background-image: url(../../../img/bag-white.png);
+    background-image: url(../img/bag-white.png);
     background-repeat: no-repeat;
     background-position: center;
     background-color: #da0114;

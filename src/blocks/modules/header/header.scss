@@ -7,7 +7,7 @@
 
 .header__logo{
    display: block;
-   background-image: url(../../../img/logo.png);
+   background-image: url(../img/logo.png);
    width: 202px;
    height: 38px;
    background-size: contain;
@@ -155,7 +155,7 @@
       width: 17px;
       cursor: pointer;
       height: 17px;
-      background-image: url(../../../img/search.png);
+      background-image: url(../img/search.png);
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
@@ -213,17 +213,17 @@
    }
    &.icon-heart{
       a{
-         background-image: url(../../../img/header__icon-1.png);
+         background-image: url(../img/header__icon-1.png);
       }
    }
    &.icon-bag{
       a{
-         background-image: url(../../../img/header__icon-2.png);
+         background-image: url(../img/header__icon-2.png);
       }
    }
    &.icon-user{
       a{
-         background-image: url(../../../img/header__icon-3.png);
+         background-image: url(../img/header__icon-3.png);
       }
    }
 }
