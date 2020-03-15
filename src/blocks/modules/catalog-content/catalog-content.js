@@ -160,7 +160,6 @@ function countActiveItems(filtersChild, event) {
    if (counter == 0) {
       event.querySelector('.catalog-filters__filter-title span').textContent = '';
    } else {
-      console.log(event.querySelector('.catalog-filters__filter-title span'))
       event.querySelector('.catalog-filters__filter-title span').textContent = `( ${counter} )`;
    }
 }
