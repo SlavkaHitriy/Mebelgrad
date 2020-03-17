@@ -212,17 +212,23 @@ __webpack_require__.r(__webpack_exports__);
 
 
 try {
-  var filterCheckboxes = function filterCheckboxes(filters, str) {
+  var filterCheckboxes = function filterCheckboxes(filters) {
     var filtersChild = filters.querySelectorAll('li');
 
-    for (var i = 0; i < filtersChild.length; i++) {
-      var input = document.createElement("INPUT");
-      input.setAttribute('type', 'checkbox');
-      input.setAttribute('value', 1);
-      input.setAttribute('name', "".concat(str, "[").concat(i, "]"));
-      filtersChild[i].appendChild(input);
-      input.classList.add('filters-input');
-      filtersChild[i].addEventListener('click', function (e) {
+    for (var j = 0; j < filtersChild.length; j++) {
+      if (filtersChild[j].classList.contains('active')) {
+        filtersChild[j].querySelector('.filters-input').checked = true;
+      } else {
+        filtersChild[j].querySelector('.filters-input').checked = false;
+      }
+
+      countActiveItems(filtersChild, filters);
+    }
+
+    for (var _i = 0; _i < filtersChild.length; _i++) {
+      filtersChild[_i].querySelector('.filters-input').setAttribute('name', filters.classList.value.match(/\b(?!catalog|filters__checkboxes\b)\w+ /)[0] + "[".concat(_i, "]"));
+
+      filtersChild[_i].addEventListener('click', function (e) {
         if (e.target.classList.contains('active')) {
           e.target.classList.remove('active');
           e.target.querySelector('.filters-input').checked = false;
@@ -239,8 +245,8 @@ try {
   var countActiveItems = function countActiveItems(filtersChild, event) {
     var counter = 0;
 
-    for (var i = 0; i < filtersChild.length; i++) {
-      if (filtersChild[i].classList.contains('active')) {
+    for (var _i2 = 0; _i2 < filtersChild.length; _i2++) {
+      if (filtersChild[_i2].classList.contains('active')) {
         ++counter;
       }
     }
@@ -356,20 +362,35 @@ try {
         filters.parentNode.style.height = 47 + 'px';
       }
     });
+  } // let materialFilters = document.querySelector('.catalog-filters__material');
+  // filterCheckboxes(materialFilters, 'materials');
+  // let mechanismFilters = document.querySelector('.catalog-filters__mechanism');
+  // filterCheckboxes(mechanismFilters, 'mechanisms');
+  // let typeFilters = document.querySelector('.catalog-filters__type-checkbox');
+  // filterCheckboxes(typeFilters, 'types');
+  // let amountFilters = document.querySelector('.catalog-filters__amount');
+  // filterCheckboxes(amountFilters, 'amount');
+  // $('.catalog-filters__checkboxes li').on('click', function () {
+  //    if ($(this).hasClass('active')) {
+  //       $(this).removeClass('active');
+  //       $(this).find('input').prop('checked', false);
+  //    } else {
+  //       $(this).addClass('active');
+  //       $(this).find('input').prop('checked', true);
+  //    }
+  // })
+
+
+  var filter = document.querySelectorAll('.catalog-filters__checkboxes');
+
+  for (var i = 0; i < filter.length; i++) {
+    filterCheckboxes(filter[i]);
   }
 
-  var materialFilters = document.querySelector('.catalog-filters__material');
-  filterCheckboxes(materialFilters, 'materials');
-  var mechanismFilters = document.querySelector('.catalog-filters__mechanism');
-  filterCheckboxes(mechanismFilters, 'mechanisms');
-  var typeFilters = document.querySelector('.catalog-filters__type-checkbox');
-  filterCheckboxes(typeFilters, 'types');
-  var amountFilters = document.querySelector('.catalog-filters__amount');
-  filterCheckboxes(amountFilters, 'amount');
   var filtersTitle = document.querySelectorAll('.catalog-filters__filter-title');
 
-  for (var i = 0; i < filtersTitle.length; i++) {
-    filtersTitle[i].addEventListener('click', function (e) {
+  for (var _i3 = 0; _i3 < filtersTitle.length; _i3++) {
+    filtersTitle[_i3].addEventListener('click', function (e) {
       if (e.target.parentNode.classList.contains('active')) {
         e.target.parentNode.style.height = 20 + 'px';
       } else {

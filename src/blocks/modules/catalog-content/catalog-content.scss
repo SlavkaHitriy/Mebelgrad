@@ -299,7 +299,7 @@
              &::before{
                 content: '';
                 top: 1px;
-                left: 0.5px;
+                left: 1px;
                 border-radius: 2px;
                 position: absolute;
                 width: 0;
@@ -311,8 +311,8 @@
           &.active{
              span{
                 &::before{
-                  width: 11px;
-                  height: 10.5px;
+                  width: 10px;
+                  height: 10px;
                 }
              }
           }
