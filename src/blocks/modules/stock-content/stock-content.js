@@ -1,8 +1,5 @@
 import Glide from '@glidejs/glide';
 
-
-
-
 try{
    if(window.innerWidth < 750){
       stockGlide.disable();
@@ -20,7 +17,7 @@ try{
          },
       }
    }
-   
+
    var stockGlide = new Glide('.stock-content__slider', config).mount();
 
 } catch {}

@@ -1,0 +1,72 @@
+.article-content__container{
+   max-width: 590px;
+   margin: 0 auto;
+   width: 100%;
+}
+.article-content{
+   padding-left: 95px;
+   padding-right: 95px;
+   .stocks-news__arrows{
+      left: 370px;
+   }
+   .product__title-wrapper{
+      margin-bottom: 50px;
+   }
+   .blog__item{
+      width: 100%;
+      height: 300px;
+      background-size: 100% 100%;
+      margin: 0;
+   }
+   .blog__glide{
+      .stocks-news__arrows{
+         left: 270px;
+      }
+   }
+   .product__slider-wrapper{
+      padding-right: 150px;
+      margin: 140px 0;
+      & + .product__slider-wrapper{
+         padding-right: 0;
+      }
+   }
+}
+.article-content__title{
+   font-size: 30px;
+   margin-bottom: 20px;
+   margin-top: 25px;
+}
+.article-content__date{
+   color: #a7a7a7;
+   font-size: 12px;
+   margin-bottom: 25px;
+}
+.article-content__inner{
+   p{
+      color: #262626;
+      margin-bottom: 0;
+      & + p{
+         margin-top: 20px;
+      }
+   }
+}
+.article-content__gallery{
+   padding: 40px 0;
+   display: flex;
+   justify-content: space-between;
+   position: relative;
+   img{
+      width: calc(50% - 15px);
+   }
+   span{
+      position: absolute;
+      left: 0;
+      bottom: 20px;
+      color: #a7a7a7;
+      font-size: 12px;
+      font-style: italic;
+   }
+}
+
+
+@import 'article-content-media'

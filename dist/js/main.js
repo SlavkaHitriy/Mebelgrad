@@ -155,6 +155,46 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/blocks/modules/article-content/article-content.js":
+/*!***************************************************************!*\
+  !*** ./src/blocks/modules/article-content/article-content.js ***!
+  \***************************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _glidejs_glide__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @glidejs/glide */ "./node_modules/@glidejs/glide/dist/glide.esm.js");
+
+
+try {
+  var config = {
+    bound: true,
+    gap: 20,
+    perView: 2,
+    breakpoints: {
+      // 1250: {
+      //    perView: 3
+      // },
+      850: {
+        perView: 1
+      } // 750: {
+      //    perView: 3
+      // },
+      // 600: {
+      //    perView: 2
+      // },
+      // 450: {
+      //    perView: 1
+      // }
+
+    }
+  };
+  new _glidejs_glide__WEBPACK_IMPORTED_MODULE_0__["default"]('.blog__glide', config).mount();
+} catch (_unused) {}
+
+/***/ }),
+
 /***/ "./src/blocks/modules/aside/aside.js":
 /*!*******************************************!*\
   !*** ./src/blocks/modules/aside/aside.js ***!
@@ -226,8 +266,7 @@ try {
     }
 
     for (var _i = 0; _i < filtersChild.length; _i++) {
-      filtersChild[_i].querySelector('.filters-input').setAttribute('name', filters.classList.value.match(/\b(?!catalog|filters__checkboxes\b)\w+ /)[0] + "[".concat(_i, "]"));
-
+      // filtersChild[i].querySelector('.filters-input').setAttribute('name', filters.classList.value.match(/\b(?!catalog|filters__checkboxes\b)\w+ /)[0] + `[${i}]`)
       filtersChild[_i].addEventListener('click', function (e) {
         if (e.target.classList.contains('active')) {
           e.target.classList.remove('active');
@@ -464,39 +503,10 @@ burger.addEventListener("click", function () {
 /*!*****************************************!*\
   !*** ./src/blocks/modules/news/news.js ***!
   \*****************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _glidejs_glide__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @glidejs/glide */ "./node_modules/@glidejs/glide/dist/glide.esm.js");
+/*! no static exports found */
+/***/ (function(module, exports) {
 
 
-try {
-  var config = {
-    bound: true,
-    gap: 20,
-    perView: 4,
-    breakpoints: {
-      1000: {
-        perView: 3
-      },
-      850: {
-        perView: 2
-      },
-      750: {
-        perView: 3
-      },
-      600: {
-        perView: 2
-      },
-      450: {
-        perView: 1
-      }
-    }
-  };
-  new _glidejs_glide__WEBPACK_IMPORTED_MODULE_0__["default"]('.news__glide', config).mount();
-} catch (_unused) {}
 
 /***/ }),
 
@@ -613,32 +623,46 @@ try {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _glidejs_glide__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @glidejs/glide */ "./node_modules/@glidejs/glide/dist/glide.esm.js");
 
+var config = {
+  bound: true,
+  gap: 20,
+  perView: 4,
+  breakpoints: {
+    1250: {
+      perView: 3
+    },
+    850: {
+      perView: 2
+    },
+    750: {
+      perView: 3
+    },
+    600: {
+      perView: 2
+    },
+    450: {
+      perView: 1
+    }
+  }
+}; // try{
+//    if(document.querySelector('.title').clientWidth){
+//       console.log('sdl;fsdf')
+//    } else {
+//       console.log('test')
+//    }
+// } catch {}
 
 try {
-  var config = {
-    bound: true,
-    gap: 20,
-    perView: 4,
-    breakpoints: {
-      1000: {
-        perView: 3
-      },
-      850: {
-        perView: 2
-      },
-      750: {
-        perView: 3
-      },
-      600: {
-        perView: 2
-      },
-      450: {
-        perView: 1
-      }
-    }
-  };
-  new _glidejs_glide__WEBPACK_IMPORTED_MODULE_0__["default"]('.stocks__glide', config).mount();
+  if (document.querySelector('.stocks__glide').clientWidth) {
+    new _glidejs_glide__WEBPACK_IMPORTED_MODULE_0__["default"]('.stocks__glide', config).mount();
+  } else {}
 } catch (_unused) {}
+
+try {
+  if (document.querySelector('.news__glide').clientWidth) {
+    new _glidejs_glide__WEBPACK_IMPORTED_MODULE_0__["default"]('.news__glide', config).mount();
+  } else {}
+} catch (_unused2) {}
 
 /***/ }),
 
@@ -658,11 +682,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_slider_slider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/slider/slider */ "./src/blocks/modules/slider/slider.js");
 /* harmony import */ var _modules_stocks_stocks__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/stocks/stocks */ "./src/blocks/modules/stocks/stocks.js");
 /* harmony import */ var _modules_news_news__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! %modules%/news/news */ "./src/blocks/modules/news/news.js");
+/* harmony import */ var _modules_news_news__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_modules_news_news__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _modules_aside_aside__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! %modules%/aside/aside */ "./src/blocks/modules/aside/aside.js");
 /* harmony import */ var _modules_aside_aside__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_modules_aside_aside__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _modules_product_product__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! %modules%/product/product */ "./src/blocks/modules/product/product.js");
 /* harmony import */ var _modules_catalog_content_catalog_content__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! %modules%/catalog-content/catalog-content */ "./src/blocks/modules/catalog-content/catalog-content.js");
 /* harmony import */ var _modules_stock_content_stock_content__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! %modules%/stock-content/stock-content */ "./src/blocks/modules/stock-content/stock-content.js");
+/* harmony import */ var _modules_article_content_article_content__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! %modules%/article-content/article-content */ "./src/blocks/modules/article-content/article-content.js");
 
 
 
@@ -670,7 +696,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
- // import "%modules%/catalog-content/selectize.min.js";
+
 
 
 

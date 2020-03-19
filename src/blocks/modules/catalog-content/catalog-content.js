@@ -157,7 +157,7 @@ try {
          countActiveItems(filtersChild, filters);
       }
       for (let i = 0; i < filtersChild.length; i++) {
-         filtersChild[i].querySelector('.filters-input').setAttribute('name', filters.classList.value.match(/\b(?!catalog|filters__checkboxes\b)\w+ /)[0] + `[${i}]`)
+         // filtersChild[i].querySelector('.filters-input').setAttribute('name', filters.classList.value.match(/\b(?!catalog|filters__checkboxes\b)\w+ /)[0] + `[${i}]`)
          filtersChild[i].addEventListener('click', function (e) {
             if (e.target.classList.contains('active')) {
                e.target.classList.remove('active');

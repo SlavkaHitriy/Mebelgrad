@@ -1749,7 +1749,7 @@ body {
 .aside__menu-item.item-11 a {
   background-size: 30px;
   background-position: 10px 7px;
-  background-image: url(../img/aside_item-11.svg);
+  background-image: url(../img/svg/aside__item-11.svg);
 }
 
 .aside__menu-item.item-12 a {
@@ -2116,17 +2116,17 @@ body {
   margin-bottom: 90px;
 }
 
-.news .stocks-news__price {
-  color: #212121;
-  font-weight: 500;
-}
-
 .news .stocks-news__arrows {
   left: 270px;
 }
 
 .news__glide {
   margin-top: 20px;
+}
+
+.news__glide .stocks-news__price {
+  color: #212121;
+  font-weight: 500;
 }
 
 .stocks-news__img-new {
@@ -2195,7 +2195,7 @@ body {
   font-size: 25px;
   line-height: 30px;
   max-width: 450px;
-  top: 240px;
+  bottom: 50px;
   padding-right: 20px;
   left: 38px;
 }
@@ -2947,6 +2947,86 @@ body {
   font-size: 30px;
 }
 
+.article-content__container {
+  max-width: 590px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.article-content {
+  padding-left: 95px;
+  padding-right: 95px;
+}
+
+.article-content .stocks-news__arrows {
+  left: 370px;
+}
+
+.article-content .product__title-wrapper {
+  margin-bottom: 50px;
+}
+
+.article-content .blog__item {
+  width: 100%;
+  height: 300px;
+  background-size: 100% 100%;
+  margin: 0;
+}
+
+.article-content .blog__glide .stocks-news__arrows {
+  left: 270px;
+}
+
+.article-content .product__slider-wrapper {
+  padding-right: 150px;
+  margin: 140px 0;
+}
+
+.article-content .product__slider-wrapper + .product__slider-wrapper {
+  padding-right: 0;
+}
+
+.article-content__title {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 25px;
+}
+
+.article-content__date {
+  color: #a7a7a7;
+  font-size: 12px;
+  margin-bottom: 25px;
+}
+
+.article-content__inner p {
+  color: #262626;
+  margin-bottom: 0;
+}
+
+.article-content__inner p + p {
+  margin-top: 20px;
+}
+
+.article-content__gallery {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.article-content__gallery img {
+  width: calc(50% - 15px);
+}
+
+.article-content__gallery span {
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  color: #a7a7a7;
+  font-size: 12px;
+  font-style: italic;
+}
+
 @media (max-width: 1500px) {
   .main-slider {
     max-width: 100%;
@@ -2968,7 +3048,6 @@ body {
     font-size: 20px;
     line-height: 24px;
     max-width: 380px;
-    top: 174px;
   }
 
   .blog__item-date {
@@ -3007,6 +3086,12 @@ body {
 
   .catalog-content .catalog-content__stitching {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .article-content .product__slider-wrapper {
+    padding-right: 0;
   }
 }
 
@@ -3123,6 +3208,12 @@ body {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .article-content .blog__item {
+    height: 250px;
+  }
+}
+
 @media (max-width: 1150px) {
   .footer__socials {
     padding-left: 20px;
@@ -3232,7 +3323,6 @@ body {
     font-size: 16px;
     line-height: 24px;
     max-width: 100%;
-    top: 85px;
     left: 20px;
     font-weight: 500;
   }
@@ -3241,6 +3331,12 @@ body {
     font-size: 11px;
     bottom: 18px;
     left: 20px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .article-content {
+    padding: 0 45px;
   }
 }
 
@@ -3331,10 +3427,6 @@ body {
     width: 100%;
     max-width: 100%;
   }
-
-  .blog__item-text {
-    top: 105px;
-  }
 }
 
 @media (max-width: 870px) {
@@ -3368,6 +3460,12 @@ body {
 
   .stock-content .product__slider-wrapper .stocks-news__arrows {
     top: 5px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .article-content .product__slider-wrapper {
+    padding-right: 95px;
   }
 }
 
@@ -3649,6 +3747,20 @@ body {
   }
 }
 
+@media screen and (max-width: 750px) {
+  .article-content .blog__glide .stocks-news__arrows {
+    left: 330px;
+  }
+
+  .article-content .stocks-news__arrows {
+    left: 245px;
+  }
+
+  .article-content .product__slider-wrapper {
+    margin: 50px 0;
+  }
+}
+
 @media (max-width: 600px) {
   .header__catalog-link {
     margin-left: 350px;
@@ -3700,6 +3812,12 @@ body {
 
   .blog {
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .article-content .product__slider-wrapper {
+    padding-right: 0;
   }
 }
 
@@ -3841,10 +3959,6 @@ body {
 
   .footer__drop.active .footer__column.mobile {
     transform: translateY(0);
-  }
-
-  .blog__item-text {
-    top: 90px;
   }
 
   .advantages__item {

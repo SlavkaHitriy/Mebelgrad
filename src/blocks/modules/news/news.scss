@@ -2,16 +2,16 @@
    position: relative;
    padding-left: 20px;
    margin-bottom: 90px;
-   .stocks-news__price{
-      color: #212121;
-      font-weight: 500;
-   }
    .stocks-news__arrows{
       left: 270px;
    }
 }
 .news__glide{
    margin-top: 20px;
+   .stocks-news__price{
+      color: #212121;
+      font-weight: 500;
+   }
 }
 .stocks-news__img{
    &-new{

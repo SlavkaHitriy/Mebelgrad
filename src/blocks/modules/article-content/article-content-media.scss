@@ -1,0 +1,42 @@
+@media screen and (max-width: 1350px){
+   .article-content .product__slider-wrapper{
+      padding-right: 0;
+   }
+}
+
+@media screen and (max-width: 1200px){
+   .article-content .blog__item{
+      height: 250px;
+   }
+}
+
+@media screen and (max-width: 1000px){
+   .article-content{
+      padding: 0 45px;
+   }
+}
+
+@media screen and (max-width: 850px){
+   .article-content .product__slider-wrapper{
+      padding-right: 95px;
+   }
+}
+
+
+@media screen and (max-width: 750px){
+   .article-content .blog__glide .stocks-news__arrows{
+      left: 330px;
+   }
+   .article-content .stocks-news__arrows{
+      left: 245px;
+   }
+   .article-content .product__slider-wrapper{
+      margin: 50px 0;
+   }
+}
+
+@media screen and (max-width: 600px){
+   .article-content .product__slider-wrapper{
+      padding-right: 0;
+   }
+}

@@ -6,5 +6,5 @@ import "%modules%/news/news";
 import "%modules%/aside/aside";
 import "%modules%/product/product";
 import "%modules%/catalog-content/catalog-content";
-// import "%modules%/catalog-content/selectize.min.js";
 import "%modules%/stock-content/stock-content";
+import "%modules%/article-content/article-content";
